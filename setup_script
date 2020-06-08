@@ -8,4 +8,4 @@ sudo apt-get install -y unclutter
 sudo echo "@unclutter -idle 0.1"  /home/pi/.config/lxsession/LXDE/autostart
 pip3 install pillow
 pip3 install setuptools
-( printf -- '* * * * * sudo /usr/local/nginx/sbin/nginx\n* * * * * python3 /home/pi/opbridge/test_gui.py' ) | crontab
+( printf -- '* * * * * sudo /usr/local/nginx/sbin/nginx\n* * * * * python3 /home/pi/opbridge/test_gui.py\n' ) | crontab
