@@ -60,10 +60,10 @@ def ring_doorbell():
     show_screen()
 
     video_chat.start()
-    time.sleep(DOORBELL_SCREEN_ACTIVE_S)
-    video_chat.end()
+    #time.sleep(DOORBELL_SCREEN_ACTIVE_S)
+    #video_chat.end()
 
-    hide_screen()
+    #hide_screen()
 
 
 class SoundEffect:
