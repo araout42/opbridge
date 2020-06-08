@@ -29,13 +29,13 @@ FROM_EMAIL = 'arthur.raout@gmail.com'
 FROM_EMAIL_PASSWORD = 'dlpxshfcydeakoli'
 
 
-def show_screen():
-    os.system("tvservice -p")
-    os.system("xset dpms force on")
+#def show_screen():
+#    os.system("tvservice -p")
+#    os.system("xset dpms force on")
 
 
-def hide_screen():
-    os.system("tvservice -o")
+#def hide_screen():
+#    os.system("tvservice -o")
 
 
 def send_email_notification(chat_url):
@@ -57,7 +57,7 @@ def ring_doorbell():
     video_chat = VideoChat(chat_id)
     send_email_notification(video_chat.get_chat_url())
    
-    show_screen()
+#    show_screen()
 
     video_chat.start()
     #time.sleep(DOORBELL_SCREEN_ACTIVE_S)
@@ -154,7 +154,7 @@ class Doorbell:
 
     def _cleanup(self):
         GPIO.cleanup(self._doorbell_button_pin)
-        show_screen()
+        #show_screen()
 
 
 if __name__ == "__main__":
