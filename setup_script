@@ -8,6 +8,7 @@ sudo apt-get -y upgrade
 sudo apt-get isntall -y python3
 sudo apt-get install -y python3-pip
 sudo apt-get install -y python3-tk
+sudo apt-get install -y python3-pil.imagetk
 sudo apt-get install -y chromium
 sudo apt-get install -y unclutter
 sudo echo "@unclutter -idle 0.1"  /home/pi/.config/lxsession/LXDE/autostart
